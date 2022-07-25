@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>First course in computer assembly</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="pop-up__notification" >
+			<h>Вы находитесь на статическом сайте!</h>
+			<h>Данная функция на этом сайте недоступна!</h>
+			<div class="pop-up__button" >
+				<button onclick="closureHint()" >Закрыть окно</button>
+			</div>
+		</div>
+		<div class="device-menu__list-link">
+			<div class="device-menu__container">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Курсы</a></li>
+					<li><a href="#">Расписание</a></li>
+					<li><a href="#">Преподаватели</a></li>
+					<li><a href="#">Рассылка</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><button>Зайти в кабинет</button></li>
+				</ul>
+				<div class="device-menu__cross"  onclick="deviceMenuClosure()"  >
+					<div class="device-menu__first-line" ></div>
+					<div class="device-menu__second-line" ></div>
+				</div>
+			</div>
+		</div>
+		<header class="container" >
+			<div class="header-menu">
+				<div class="header-menu__logotip">
+					<img src="./static/picture/logo.svg">
+				</div>
+				<div class="header-menu__list-link">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Курсы</a></li>
+						<li><a href="#">Расписание</a></li>
+						<li><a href="#">Преподаватели</a></li>
+						<li><a href="#">Рассылка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header-menu__button-link">
+					<button onclick="openingHint()" >Зайти в кабинет</button>
+				</div>
+			</div>
+			<div class="device-menu">
+				<div class="device-menu__logotip">
+					<img src="./static/picture/logo.svg">
+				</div>
+				<button class="device-menu__block" onclick="deviceMenuOpening()">
+					<div class="device-menu__line"></div>
+					<div class="device-menu__line"></div>
+					<div class="device-menu__line"></div>
+				</button>
+			</div>
+			<div class="header-content">
+				<h>
+					Первый курс<br> 
+					по компьютерной сборке	
+				</h>
+				<div class="header-content__counter">
+					<div class="counter__box">
+						<p id="counter__number-first"></p>
+						<h5 id="counter__text-first"></h5>
+					</div>
+					<div class="counter__box">
+						<p id="counter__number-second"></p>
+						<h5 id="counter__text-second"></h5>
+					</div>
+					<div class="counter__box">
+						<p id="counter__number-three"></p>
+						<h5 id="counter__text-three"></h5>
+					</div>
+					<div class="counter__box">
+						<p id="counter__number-four"></p>
+						<h5 id="counter__text-four"></h5>
+					</div>
+				</div>
+			</div>
+			<div class="header-content__last-line">
+				<div class="header-content__box">
+					<button id="header-content__button"  onclick="openingHint()" >Заказать курс</button>
+					<div class="last-line__people">
+						<div class="last-line__all-students">
+							<h1 class="all-students__title">Учеников всего:</h1>
+							<h1 class="all-students__quantity">200</h1>
+						</div>
+						<div class="last-line__completed-course">
+							<h1 class="completed-course__title">Успешн закончили курс:</h1>
+							<h1 class="completed-course__quantity">190</h1>
+						</div>
+					</div>
+					<div class="last-line__earned-students">
+						<div class="earned-students__text">
+							<h6 class="earned-students__title">Заработано учениками:</h1>
+							<h6 class="earned-students__quantity">400 000Р</h1>
+						</div>
+						<div class="earned-students__stretching">
+							<div class="earned-students__slider"></div>
+						</div>
+						<div class="earned-students__result">
+							<h1 class="earned-students__beginning">0</h1>
+							<h1 class="earned-students__finish">1 000 000P</h1>
+						</div>
+					</div>
+					<button id="device-content__button" onclick="openingHint()" >Заказать курс</button>
+				</div>
+			</div>
+		</header>
+		<section>
+			<main>
+				<div class="about">
+					<div class="about__frame">
+						<img src="./static/picture/image.svg">
+					</div>
+					<div class="about__text">
+						<h1 class="about-text__title">
+							Чем мы занимаемся?
+						</h1>
+						<h1 class="about-text__subtitle">
+							В своём стремлении повысить качество жизни, они забывают, что начало повседневной работы по формированию позиции, в своём классическом представлении, допускает внедрение поэтапного и последовательного развития общества. Вот вам яркий пример современных тенденций - экономическая повестка сегодняшнего дня позволяет выполнить важные задания по разработке благоприятных перспектив.
+						</h1>
+					</div>
+				</div>
+				<div class="start">
+					<div class="start__top">
+						<img class="start__icons" src="./static/picture/Ellipse1.svg" >
+						<h1>Быстрый старт</h1>
+					</div>
+					<h1 class="start__subtitle">
+						Больше 90% учеников прошли полный курс и смогли<br>
+						собрать свой первый компьютер
+					</h1>
+					<div class="start__infographic">
+						<div class="infographic__100-box">
+							<p>100%</p>
+							<div class="box-100__gradient"></div>
+							<div class="infographic__text">
+								<h1>
+									В своём стремлении повысить качество жизни, они забывают, что начало повседневной работы по формированию позиции, в своём классическом 
+								</h1>
+							</div>
+						</div>
+						<div class="infographic__75-box">
+							<p>75%</p>
+							<div class="box-75__gradient"></div>
+							<div class="infographic__text">
+								<h1>
+									В своём стремлении повысить качество жизни, они забывают, что начало повседневной работы по формированию позиции, в своём классическом
+								</h1>
+							</div>
+						</div>
+						<div class="infographic__50-box">
+							<p>50%</p>
+							<div class="box-50__gradient"></div>
+							<div class="infographic__text">
+								<h1>
+									В своём стремлении повысить качество жизни, они забывают, что начало повседневной работы по формированию позиции, в своём классическом 
+								</h1>
+							</div>
+						</div>
+						<div class="infographic__result">
+							<p>Итог</p>
+							<div class="result__gradient"></div>
+							<div class="infographic__text">
+								<h1>
+									В своём стремлении повысить качество жизни, они забывают, что начало повседневной работы по формированию позиции, в своём классическом 
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="advantages">
+					<p class="advantages__title">
+						Получите профессию прямо сейчас
+					</p>
+					<div class="advantages__box">
+						<div class="advantages__skills">
+							<div class="skills__img">
+								<img src="./static/picture/icon-1.svg">
+							</div>
+							<h1>
+								Только практические<br> навыки в работе
+							</h1>
+							<h5>
+								В своём стремлении повысить качество жизни,<br> они забывают, что начало повседневной работы по формированию позиции, в своём классическом представлении
+							</h5>
+						</div>
+						<div class="advantages__equipment">
+							<div class="equpment__img">
+								<img src="./static/picture/icon-2.svg">
+							</div>
+							<h1>
+								Работа на самом <br> современном оборудоании
+							</h1>
+							<h5>
+								В своём стремлении повысить качество жизни,<br> они забывают, что начало повседневной работы по формированию позиции, в своём классическом представлении
+							</h5>
+						</div>
+						<div class="advantages__education">
+							<div class="education__img">
+								<img src="./static/picture/icon-3.svg">
+							</div>
+							<h1>
+								Сертификация <br> по окончании обучения
+							</h1>
+							<h5>
+								В своём стремлении повысить качество жизни,<br> они забывают, что начало повседневной работы по формированию позиции, в своём классическом представлении
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="partners">
+					<div class="partners__top">
+						<img class="partners__top-icons" src="./static/picture/Ellipse2.svg" >
+						<p>Партнеры - топовые бренды</p>
+					</div>
+					<div class="partners__logos">
+						<div class="partners__top-box">
+							<img src="./static/picture/logo1.svg">
+							<div class="partners__top-separator"></div>
+							<img src="./static/picture/logo1.svg">
+							<div class="partners__top-separator"></div>
+							<img src="./static/picture/logo1.svg">
+							<div class="partners__top-separator"></div>
+							<img src="./static/picture/logo1.svg">
+						</div>
+						<div class="partners__separator"></div>
+						<div class="partners__bottom-box">
+							<img src="./static/picture/logo1.svg">
+							<div class="partners__bottom-separator"></div>
+							<img src="./static/picture/logo1.svg">
+							<div class="partners__bottom-separator"></div>
+							<img src="./static/picture/logo1.svg">
+							<div class="partners__bottom-separator"></div>
+							<img src="./static/picture/logo1.svg">
+						</div>
+					</div>
+				</div>
+				<div class="program">
+					<img class="program__icon" src="./static/picture/Ellipse3.svg" >
+					<p class="program__title">
+						Программа обучения
+					</p>
+					<h1 class="program__subtitle">
+						Больше 90% учеников прошли полный курс и смогли <br>
+						собрать свой первый компьютер
+					</h1>
+					<div class="program__line">
+						<div class="line__left-part">
+							<div class="program-week__left-part">
+								<div class="program-week__box">
+									<h6 class="week__title">
+										Неделя №1
+									</h6>
+									<h1 class="week__subtitle">
+										Красивая часть курса,<br> 
+										которая помогает в успехе
+									</h1>
+								</div>
+								<div class="program-week__withdrawal"></div>
+							</div>
+							<div class="program-week__left-part">
+								<div class="program-week__box">
+									<h6 class="week__title">
+										Неделя №3
+									</h6>
+									<h1 class="week__subtitle">
+										Красивая часть курса,<br> 
+										которая помогает в успехе
+									</h1>
+								</div>
+								<div class="program-week__withdrawal"></div>
+							</div>
+							<div class="program-week__left-part">
+								<div class="program-week__box">
+									<h6 class="week__title">
+										Неделя №5
+									</h6>
+									<h1 class="week__subtitle">
+										Красивая часть курса,<br> 
+										которая помогает в успехе
+									</h1>
+								</div>
+								<div class="program-week__withdrawal"></div>
+							</div>
+							<div class="program-week__left-part">
+								<div class="program-week__box">
+									<h6 class="week__title">
+										Неделя №7
+									</h6>
+									<h1 class="week__subtitle">
+										Красивая часть курса,<br> 
+										которая помогает в успехе
+									</h1>
+								</div>
+								<div class="program-week__withdrawal"></div>
+							</div>
+						</div>
+						<div class="line__central-part"></div>
+						<div class="line__right-part">
+							<div class="program-week__right-part">
+								<div class="program-week__withdrawal-right"></div>
+								<div class="program-week__box-right">
+									<h6 class="week__title-right">
+										Неделя №2
+									</h6>
+									<h1 class="week__subtitle-right">
+										Красивая часть курса,<br> 
+										которая помогает в успехе
+									</h1>
+								</div>
+							</div>
+							<div class="program-week__right-part">
+								<div class="program-week__withdrawal-right"></div>
+								<div class="program-week__box-right">
+									<h6 class="week__title-right">
+										Неделя №4
+									</h6>
+									<h1 class="week__subtitle-right">
+										Красивая часть курса,<br> 
+										которая помогает в успехе
+									</h1>
+								</div>
+							</div>
+							<div class="program-week__right-part">
+								<div class="program-week__withdrawal-right"></div>
+								<div class="program-week__box-right">
+									<h6 class="week__title-right">
+										Неделя №6
+									</h6>
+									<h1 class="week__subtitle-right">
+										Красивая часть курса,<br> 
+										которая помогает в успехе
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="teachers">
+					<div class="teachers__top">
+						<img src="./static/picture/Ellipse4.svg">
+						<h1 class="teachers__top-title">
+							Ваши преподаватели
+						</h1>
+					</div>
+					<div class="teachers__box">
+						<div class="teacher">
+							<img src="./static/picture/Ellipse5.svg">
+							<h3 class="teacher-title">
+								Дмитрий Иванов
+							</h3>
+							<h6 class="teacher-subtitle">
+								Специалист по видеокартам
+							</h6>
+							<button onclick="openingHint()" >Биография</button>
+						</div>
+						<div class="teacher">
+							<img src="./static/picture/Ellipse6.svg">
+							<h3 class="teacher-title">
+								Дмитрий Иванов
+							</h3>
+							<h6 class="teacher-subtitle">
+								Специалист по видеокартам
+							</h6>
+							<button onclick="openingHint()" >Биография</button>
+						</div>
+						<div class="teacher">
+							<img src="./static/picture/Ellipse7.svg">
+							<h3 class="teacher-title">
+								Дмитрий Иванов
+							</h3>
+							<h6 class="teacher-subtitle">
+								Специалист по видеокартам
+							</h6>
+							<button onclick="openingHint()" >Биография</button>
+						</div>
+					</div>
+				</div>
+			</main>
+		</section>
+		<footer>
+			<p class="footer__title">
+				Статьи каждую неделю
+			</p>
+			<h1 class="footer__subtitle">
+				Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер
+			</h1>
+			<form>
+				<input type="email" name="" placeholder="E-mail" class="footer_input" >
+				<button onclick="openingHint()" >Подписаться</button>
+			</form>
+			<div class="footer__icon-box">
+				<a href="#" class="footer__icon">
+					<div>
+						<img src="./static/picture/vk.svg" id="footer__icon-first">
+					</div>
+				</a>
+				<a href="#" class="footer__icon">
+					<div>
+						<img src="./static/picture/youtube.svg">
+					</div>
+				</a>
+				<a href="#" class="footer__icon">
+					<div>
+						<img src="./static/picture/facebook.svg">
+					</div>
+				</a>
+				<a href="#" class="footer__icon">
+					<div>
+						<img src="./static/picture/instagram.svg" id="footer__icon-last">
+					</div>
+				</a>
+			</div>
+		</footer>
+		<script src="dynamics.js"></script>
+	</body>
+</html>
